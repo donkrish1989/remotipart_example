@@ -1,4 +1,4 @@
-<%= form_tag :upload, :multipart => true, :remote => true %>  
+<%= form_tag :upload, :multipart => true, :remote => true do %>  
   <%= label_tag :file, "File:" %> <%= file_field_tag :file %>
   <%= submit_tag "Import Data" %>
 <% end %>
