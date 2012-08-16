@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   def upload
     if request.post?
       file = params[:file]
-      raise file.original_filename.inspect
+      render :text => "$('#file_name').html('#{file.original_filename}');"
     end
   end
 end
